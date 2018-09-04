@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-03T08:49:59.753Z</updated>
+  <updated>2018-09-04T09:50:36.573Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>静态代理</title>
+    <link href="http://yoursite.com/2018/09/04/%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86/"/>
+    <id>http://yoursite.com/2018/09/04/静态代理/</id>
+    <published>2018-09-04T09:42:58.000Z</published>
+    <updated>2018-09-04T09:50:36.573Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;java-静态代理&quot;&gt;&lt;a href=&quot;#java-静态代理&quot; class=&quot;headerlink&quot; title=&quot;java 静态代理&quot;&gt;&lt;/a&gt;java 静态代理&lt;/h1&gt;&lt;h3 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1.简介&quot;&gt;&lt;/a&gt;1.简介&lt;/h3&gt;&lt;p&gt;为其他对象提供一种代理以控制对这个对象的访问称为代理。&lt;/p&gt;
+&lt;h4 id=&quot;定义要点：&quot;&gt;&lt;a href=&quot;#定义要点：&quot; class=&quot;headerlink&quot; title=&quot;定义要点：&quot;&gt;&lt;/a&gt;定义要点：&lt;/h4&gt;&lt;p&gt;1) 其他对象：目标对象，想要访问的对象，常被称为被委托对象或被代理对象。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="设计模式" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>docker使用</title>
