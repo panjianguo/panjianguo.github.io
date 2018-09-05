@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -81,17 +81,22 @@
 
 
 
-<meta name="description" content="docker 简介Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）。几乎没有性能开销，可以很容易地在机器和数据中心中运行。最重要的是，他们不依赖于任何语言、框架包括系统。">
+<meta name="description" content="动态代理动态代理：在程序运行时，通过反射机制动态地创建一个代理类。 模式要点分析1) 动态的体现：程序开始执行时是没有代理类的，在程序运行时，java利用反射机制动态生成代理类的实例2) jdk技术支持：java在java.lang.reflect包里提供两个类/接口帮助我们创建和使用代理类实例，一个是Proxy类，一个是InvocationHandler接口。3) 两种代理类的模式区别：静态模式">
+<meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="docker使用">
-<meta property="og:url" content="http://yoursite.com/2018/09/03/docker使用/index.html">
+<meta property="og:title" content="动态代理">
+<meta property="og:url" content="http://yoursite.com/2018/09/05/动态代理/index.html">
 <meta property="og:site_name" content="曾经的自己">
-<meta property="og:description" content="docker 简介Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）。几乎没有性能开销，可以很容易地在机器和数据中心中运行。最重要的是，他们不依赖于任何语言、框架包括系统。">
+<meta property="og:description" content="动态代理动态代理：在程序运行时，通过反射机制动态地创建一个代理类。 模式要点分析1) 动态的体现：程序开始执行时是没有代理类的，在程序运行时，java利用反射机制动态生成代理类的实例2) jdk技术支持：java在java.lang.reflect包里提供两个类/接口帮助我们创建和使用代理类实例，一个是Proxy类，一个是InvocationHandler接口。3) 两种代理类的模式区别：静态模式">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-03T08:49:59.753Z">
+<meta property="og:image" content="http://yoursite.com/2018/09/05/动态代理/静态代理关系图.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/05/动态代理/动态代理关系图.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/05/动态代理/动态代理流程图.png">
+<meta property="og:updated_time" content="2018-09-05T09:29:21.916Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="docker使用">
-<meta name="twitter:description" content="docker 简介Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）。几乎没有性能开销，可以很容易地在机器和数据中心中运行。最重要的是，他们不依赖于任何语言、框架包括系统。">
+<meta name="twitter:title" content="动态代理">
+<meta name="twitter:description" content="动态代理动态代理：在程序运行时，通过反射机制动态地创建一个代理类。 模式要点分析1) 动态的体现：程序开始执行时是没有代理类的，在程序运行时，java利用反射机制动态生成代理类的实例2) jdk技术支持：java在java.lang.reflect包里提供两个类/接口帮助我们创建和使用代理类实例，一个是Proxy类，一个是InvocationHandler接口。3) 两种代理类的模式区别：静态模式">
+<meta name="twitter:image" content="http://yoursite.com/2018/09/05/动态代理/静态代理关系图.png">
 
 
 
@@ -121,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/03/docker使用/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/05/动态代理/"/>
 
 
 
 
 
-  <title>docker使用 | 曾经的自己</title>
+  <title>动态代理 | 曾经的自己</title>
   
 
 
@@ -288,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/docker使用/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/05/动态代理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="农纷期第一李白">
@@ -305,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">docker使用</h1>
+          <h1 class="post-title" itemprop="name headline">动态代理</h1>
         
 
         <div class="post-meta">
@@ -317,8 +322,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-03T15:30:32+08:00">
-                2018-09-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T17:10:14+08:00">
+                2018-09-05
               </time>
             
 
@@ -340,8 +345,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/服务器/" itemprop="url" rel="index">
-                    <span itemprop="name">服务器</span>
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
                   </a>
                 </span>
 
@@ -382,38 +387,40 @@
       
 
       
-        <h1 id="docker-简介"><a href="#docker-简介" class="headerlink" title="docker 简介"></a>docker 简介</h1><p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）。几乎没有性能开销，可以很容易地在机器和数据中心中运行。最重要的是，他们不依赖于任何语言、框架包括系统。</p>
+        <h1 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h1><p>动态代理：在程序运行时，通过反射机制动态地创建一个代理类。</p>
+<h2 id="模式要点分析"><a href="#模式要点分析" class="headerlink" title="模式要点分析"></a>模式要点分析</h2><p>1) 动态的体现：程序开始执行时是没有代理类的，在程序运行时，java利用反射机制动态生成代理类的实例<br>2) jdk技术支持：java在java.lang.reflect包里提供两个类/接口帮助我们创建和使用代理类实例，一个是Proxy类，一个是InvocationHandler接口。<br>3) 两种代理类的模式区别：静态模式要求为程序中所有需要被访问的目标创建代理类，如果有10种代理目标，我们就得创建10个代理类，让代理类直接访问目标对象。</p>
 <a id="more"></a>
-<h1 id="一、CentOS6-x安装docker"><a href="#一、CentOS6-x安装docker" class="headerlink" title="一、CentOS6.x安装docker"></a>一、CentOS6.x安装docker</h1><p>1) 更新yum源<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update -y</span><br></pre></td></tr></table></figure></p>
-<p>2) 通过安装docker-io软件包来安装Docker<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install docker-io</span><br></pre></td></tr></table></figure></p>
-<p>3) 启动docker进程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service docker on</span><br></pre></td></tr></table></figure></p>
-<p>4) 让docker在服务器启动时启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig docker on</span><br></pre></td></tr></table></figure></p>
-<h1 id="二、Docker-使用"><a href="#二、Docker-使用" class="headerlink" title="二、Docker 使用"></a>二、Docker 使用</h1><p>1） 查询和拉取镜像</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker search mysql:5.7</span><br><span class="line">docker pull mysql:5.7</span><br></pre></td></tr></table></figure>
-<p>2) 列出镜像</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@vultr /]# docker images</span><br><span class="line">REPOSITORY                    TAG                 IMAGE ID            CREATED             VIRTUAL SIZE</span><br><span class="line">hub.c.163.com/library/mysql   5.7                 573ca163b053        11 months ago       407.1 MB</span><br><span class="line">mysql                         5.7                 573ca163b053        11 months ago       407.1 MB</span><br></pre></td></tr></table></figure>
-<p>3) 运行docker</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 3306:3306 --name mymysql -e MYSQL_ROOT_PASSWORD=123456 mysql:5.7</span><br><span class="line"></span><br><span class="line">-d 表示后台云信docker镜像</span><br><span class="line">-p 表示端口号，前一个8080是指我们访问tomcat时的端口号，</span><br><span class="line">后一个8080是tomcat启动的一个容器在docker中运行的端口号，</span><br><span class="line">指定端口号为了更明确的访问tomcat。 </span><br><span class="line">tomcat:last last是指定的tomcat的标签，相同的镜像可以指定不同的标签以做区分。</span><br></pre></td></tr></table></figure>
-<p>4) 列出正在运行的容器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@vultr /]# docker ps</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS                    NAMES</span><br><span class="line">94ee2b979517        mysql:5.7           &quot;docker-entrypoint.s   2 days ago          Up 2 days           0.0.0.0:3306-&gt;3306/tcp   mysqlserver</span><br></pre></td></tr></table></figure>
-<p>5) 进入容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 94ee2b979517 /bin/bash</span><br></pre></td></tr></table></figure></p>
-<p>6) 停止运行容器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop 44d9be4dca95</span><br></pre></td></tr></table></figure>
-<p>7) 移除容器和移除镜像<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker rm 44d9be4dca95 // 移除容器</span><br><span class="line">docker rmi 4b8387148088 // 移除镜像</span><br></pre></td></tr></table></figure></p>
-<h1 id="三、docker-安装mysql"><a href="#三、docker-安装mysql" class="headerlink" title="三、docker 安装mysql"></a>三、docker 安装mysql</h1><p>1.下载镜像，mysql 5.7<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull mysql:5.7</span><br></pre></td></tr></table></figure></p>
-<p>2.创建mysql容器，并后台启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 3306:3306 -e MYSQL_USER=&quot;woniu&quot; -e MYSQL_PASSWORD=&quot;123456&quot; -e MYSQL_ROOT_PASSWORD=&quot;123456&quot; --name mysqltest1 mysql:5.7 --character-set-server=utf8 --collation-server=utf8_general_ci</span><br></pre></td></tr></table></figure></p>
-<p>参数说明：<br>-e MYSQL_USER=”root”  ：添加root用户</p>
-<p>-e MYSQL_PASSWORD=”123456”：设置添加的用户密码</p>
-<p>-e MYSQL_ROOT_PASSWORD=”123456”：设置root用户密码</p>
-<p>–character-set-server=utf8：设置字符集为utf8</p>
-<p>–collation-server=utf8_general_cli：设置字符比较规则为utf8_general_cli</p>
-<p>3.挂载外部配置和数据安装<br>1) 创建目录和配置文件my.cnf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">mkdir /docker</span><br><span class="line">mkdir /docker/mysql</span><br><span class="line">mkdir /docker/mysql/conf</span><br><span class="line">mkdir /docker/mysql/data</span><br><span class="line"> </span><br><span class="line">创建my.cnf配置文件</span><br><span class="line">touch /docker/mysql/conf/my.cnf</span><br><span class="line"> </span><br><span class="line">my.cnf添加如下内容：</span><br><span class="line">[mysqld]</span><br><span class="line">user=mysql</span><br><span class="line">character-set-server=utf8</span><br><span class="line">default_authentication_plugin=mysql_native_password</span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8</span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8</span><br></pre></td></tr></table></figure></p>
-<p>2) 创建容器，并后台启动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 3306:3306 --privileged=true -v /docker/mysql/conf/my.cnf:/etc/my.cnf -v /docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 --name mysqltest2 mysql:5.7</span><br></pre></td></tr></table></figure>
-<p>参数说明：</p>
-<p>–privileged=true：容器内的root拥有真正root权限，否则容器内root只是外部普通用户权限</p>
-<p>-v /docker/mysql/conf/my.cnf:/etc/my.cnf：映射配置文件</p>
-<p>-v /docker/mysql/data:/var/lib/mysql：映射数据目录</p>
+<p>下面是其简易关系图：</p>
+<p><img src="/2018/09/05/动态代理/静态代理关系图.png" alt="image"></p>
+<p>动态代理则是在程序调用某个目标类时才通过反射创建代理类的实例，创建过程并不是在开发层面可见的，又加之常常需要在代理类中进行一些额外操作来加强目标类的功能，如果代理类不可见我们就不能达到这个目的，所以这时在代理类和被代理类之间就需要一个第三者，帮助我们完成功能增强，它就是InvocationHandler。</p>
+<p>下面是其简易关系图：</p>
+<p><img src="/2018/09/05/动态代理/动态代理关系图.png" alt="image"></p>
+<h2 id="动态代理代码案例"><a href="#动态代理代码案例" class="headerlink" title="动态代理代码案例"></a>动态代理代码案例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">// proxy 源码</span><br><span class="line">public class Proxy implements Serializable &#123;</span><br><span class="line">    </span><br><span class="line">    //被代理类构造函数的参数类型，即InvocationHandler</span><br><span class="line">    private static final Class&lt;?&gt;[] constructorParams =</span><br><span class="line">            &#123; InvocationHandler.class &#125;;</span><br><span class="line"></span><br><span class="line">    //代理对象的创建方法，通过Proxy.newProxyInstance(...)生成代理对象</span><br><span class="line">    public static Object newProxyInstance(ClassLoader loader,</span><br><span class="line">                                          Class&lt;?&gt;[] interfaces,</span><br><span class="line">                                          InvocationHandler h) &#123;</span><br><span class="line">        </span><br><span class="line">        ...省去一些方法，只显示核心代码</span><br><span class="line"></span><br><span class="line">        final Class&lt;?&gt;[] intfs = interfaces.clone();</span><br><span class="line">        //1，通过类加载器和接口创建代理类</span><br><span class="line">        Class&lt;?&gt; cl = getProxyClass0(loader, intfs);</span><br><span class="line"></span><br><span class="line">        //2，通过反射获取代理类中public类型的构造，且参数类型为InvocationHandler</span><br><span class="line">        final Constructor&lt;?&gt; cons = cl.getConstructor(constructorParams);</span><br><span class="line">        final InvocationHandler ih = h;</span><br><span class="line">        if (!Modifier.isPublic(cl.getModifiers())) &#123;</span><br><span class="line">            AccessController.doPrivileged(new PrivilegedAction&lt;Void&gt;() &#123;</span><br><span class="line">                public Void run() &#123;</span><br><span class="line">                    cons.setAccessible(true);</span><br><span class="line">                    return null;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">        //3，通过构造，创建代理类的实例对象，并返回</span><br><span class="line">        return cons.newInstance(new Object[]&#123;h&#125;);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">    //通过类加载器和接口，动态创建代理类。</span><br><span class="line">    public static Class&lt;?&gt; getProxyClass0(ClassLoader loader, Class... interfaces)</span><br><span class="line">    &#123;...&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 接口</span><br><span class="line">public interface Subject &#123;</span><br><span class="line"></span><br><span class="line">    public String getResponse(String url);</span><br><span class="line"></span><br><span class="line">    public void getCookie(String url);</span><br><span class="line"></span><br><span class="line">    public String getUpdateTime();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 目标对象接口实现</span><br><span class="line">public class TargetSubject implements Subject &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String getResponse(String url) &#123;</span><br><span class="line">        Log.e(&quot;miss08&quot;, &quot;执行业务方法：getResponse .&quot; + url);</span><br><span class="line">        return &quot;2017/10/03 21:56&quot;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void getCookie(String url) &#123;</span><br><span class="line">        Log.e(&quot;miss08&quot;, &quot;执行业务方法：getCookie .&quot; + url);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String getUpdateTime() &#123;</span><br><span class="line"></span><br><span class="line">        Log.e(&quot;miss08&quot;, &quot;执行业务方法：getUpdateTime .&quot;);</span><br><span class="line">        long time = System.currentTimeMillis();</span><br><span class="line">        return String.valueOf(time);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 创建handler，实现InvocationHandler，Proxy创建代理类建时需要这个handler参数。</span><br><span class="line">public class DynamicInvocationHandler implements InvocationHandler &#123;</span><br><span class="line"></span><br><span class="line">    private Subject subject;</span><br><span class="line"></span><br><span class="line">    public DynamicInvocationHandler(Subject subject) &#123;</span><br><span class="line">        this.subject = subject;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public Object invoke(Object proxy, Method method, Object[] args)  &#123;</span><br><span class="line"></span><br><span class="line">        Log.e(&quot;miss08&quot;, &quot;开始执行代理方法，处理的方法是 ： &quot; + method.getName());</span><br><span class="line">       </span><br><span class="line">        //通过反射获取到接口的method，执行subject目标对象中带参数args的method方法</span><br><span class="line">        String response = (String) method.invoke(subject, args);</span><br><span class="line"></span><br><span class="line">        Log.e(&quot;miss08&quot;, &quot;业务方法处理完毕,响应结果是 ： &quot; + response);</span><br><span class="line">        return response;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 测试</span><br><span class="line">public class Test &#123;</span><br><span class="line">     public static void main(String[] args) &#123;</span><br><span class="line">        Subject targetSubject = new TargetSubject();</span><br><span class="line">        InvocationHandler handler = new DynamicInvocationHandler(targetSubject);</span><br><span class="line">        log.info(&quot;miss08,开始创建代理类&quot;);</span><br><span class="line"></span><br><span class="line">        Class&lt;?&gt;[] interfaces = targetSubject.getClass().getInterfaces();</span><br><span class="line">        ClassLoader classLoader = Subject.class.getClassLoader();</span><br><span class="line"></span><br><span class="line">        //创建代理类的实例</span><br><span class="line">        Subject proxySubject = (Subject) Proxy.newProxyInstance(classLoader</span><br><span class="line">                , interfaces</span><br><span class="line">                , handler);</span><br><span class="line">        log.info(&quot;miss08,代理类实例创建成功&quot;);</span><br><span class="line"></span><br><span class="line">        //调用代理类的getResponse方法</span><br><span class="line">        proxySubject.getResponse(&quot;http://192.168.1.100:8080/currentTime&quot;);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>动态代理源码流程：</p>
+<p><a href="https://upload-images.jianshu.io/upload_images/8139184-892242081cb02704.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/665/format/webp" target="_blank" rel="noopener">image</a></p>
+<h2 id="自我理解"><a href="#自我理解" class="headerlink" title="自我理解"></a>自我理解</h2><p>1) 生成调用处理对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">InvocationHandler handler = new DynamicInvocationHandler(targetSubject);</span><br></pre></td></tr></table></figure></p>
+<p>2) 创建代理实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 目标类的接口集合</span><br><span class="line">Class&lt;?&gt;[] interfaces = targetSubject.getClass().getInterfaces();</span><br><span class="line">// 类加载器</span><br><span class="line">ClassLoader classLoader = Subject.class.getClassLoader();</span><br><span class="line"></span><br><span class="line">//创建代理类的实例</span><br><span class="line">Subject proxySubject = (Subject) Proxy.newProxyInstance(classLoader</span><br><span class="line">                , interfaces</span><br><span class="line">                , handler);</span><br></pre></td></tr></table></figure></p>
+<p>(Subject) Proxy.newProxyInstance(classLoader<br>                , interfaces<br>                , handler)方法中包含3步</p>
+<ul>
+<li>通过类加载器和接口创建代理类<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; cl = getProxyClass0(loader, intfs);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>其中intfs是调用接口列表</p>
+<ul>
+<li><p>通过反射获取代理类中public类型的构造，且参数类型为InvocationHandler</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">final Constructor&lt;?&gt; cons = cl.getConstructor(constructorParams);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过构造，创建代理类的实例对象，并返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cons.newInstance(new Object[]&#123;h&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>猜测proxySubject伪代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class ProxySubject &#123;</span><br><span class="line">    private InvocationHandler handler;</span><br><span class="line">    </span><br><span class="line">    public ProxySubject(InvocationHandler handler) &#123;</span><br><span class="line">        this.handler = handler;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public void getResponse (String s) &#123;</span><br><span class="line">        handler.invoke(this, this.getClass().getMethod(&quot;getResponse&quot;, String.class), s)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3) 调用代理类的getResponse方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxySubject.getResponse(&quot;http://192.168.1.100:8080/currentTime&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>4) handler调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">invoke(Object proxy, Method method, Object[] args)</span><br></pre></td></tr></table></figure></p>
+<p>5) 实际调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//通过反射获取到接口的method，执行subject目标对象中带参数args的method方法</span><br><span class="line">        String response = (String) method.invoke(subject, args);</span><br></pre></td></tr></table></figure></p>
+<p>6) 调用实际对象的getResponse方法</p>
+<h2 id="动态代理待用流程图"><a href="#动态代理待用流程图" class="headerlink" title="动态代理待用流程图"></a>动态代理待用流程图</h2><p><img src="/2018/09/05/动态代理/动态代理流程图.png" alt="image"></p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://www.jianshu.com/p/5478f170d9ee" target="_blank" rel="noopener">java设计模式（三）代理模式之静态代理和动态代理模式</a></p>
 
       
     </div>
@@ -429,6 +436,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
+        </div>
+      
 
       
       
@@ -438,8 +451,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/02/反射/" rel="next" title="反射">
-                <i class="fa fa-chevron-left"></i> 反射
+              <a href="/2018/09/04/静态代理/" rel="next" title="静态代理">
+                <i class="fa fa-chevron-left"></i> 静态代理
               </a>
             
           </div>
@@ -447,10 +460,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/04/静态代理/" rel="prev" title="静态代理">
-                静态代理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -593,7 +602,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#docker-简介"><span class="nav-number">1.</span> <span class="nav-text">docker 简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、CentOS6-x安装docker"><span class="nav-number">2.</span> <span class="nav-text">一、CentOS6.x安装docker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、Docker-使用"><span class="nav-number">3.</span> <span class="nav-text">二、Docker 使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、docker-安装mysql"><span class="nav-number">4.</span> <span class="nav-text">三、docker 安装mysql</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#动态代理"><span class="nav-number">1.</span> <span class="nav-text">动态代理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模式要点分析"><span class="nav-number">1.1.</span> <span class="nav-text">模式要点分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态代理代码案例"><span class="nav-number">1.2.</span> <span class="nav-text">动态代理代码案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自我理解"><span class="nav-number">1.3.</span> <span class="nav-text">自我理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态代理待用流程图"><span class="nav-number">1.4.</span> <span class="nav-text">动态代理待用流程图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">1.5.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
             
 
           </div>

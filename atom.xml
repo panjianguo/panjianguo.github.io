@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-04T09:59:39.795Z</updated>
+  <updated>2018-09-05T09:29:21.916Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>动态代理</title>
+    <link href="http://yoursite.com/2018/09/05/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/"/>
+    <id>http://yoursite.com/2018/09/05/动态代理/</id>
+    <published>2018-09-05T09:10:14.000Z</published>
+    <updated>2018-09-05T09:29:21.916Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;动态代理&quot;&gt;&lt;a href=&quot;#动态代理&quot; class=&quot;headerlink&quot; title=&quot;动态代理&quot;&gt;&lt;/a&gt;动态代理&lt;/h1&gt;&lt;p&gt;动态代理：在程序运行时，通过反射机制动态地创建一个代理类。&lt;/p&gt;
+&lt;h2 id=&quot;模式要点分析&quot;&gt;&lt;a href=&quot;#模式要点分析&quot; class=&quot;headerlink&quot; title=&quot;模式要点分析&quot;&gt;&lt;/a&gt;模式要点分析&lt;/h2&gt;&lt;p&gt;1) 动态的体现：程序开始执行时是没有代理类的，在程序运行时，java利用反射机制动态生成代理类的实例&lt;br&gt;2) jdk技术支持：java在java.lang.reflect包里提供两个类/接口帮助我们创建和使用代理类实例，一个是Proxy类，一个是InvocationHandler接口。&lt;br&gt;3) 两种代理类的模式区别：静态模式要求为程序中所有需要被访问的目标创建代理类，如果有10种代理目标，我们就得创建10个代理类，让代理类直接访问目标对象。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="设计模式" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>静态代理</title>
