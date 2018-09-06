@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Spring," />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -81,18 +81,20 @@
 
 
 
-<meta name="description" content="Spring表达式语言:SpEL(一段简单的spel入门代码)简介Spring表达式语言（简称SpEl）是一个支持查询和操作运行时对象导航图功能的强大的表达式语言. 它的语法类似于传统EL，但提供额外的功能，最出色的就是函数调用和简单字符串的模板函数。 尽管有其他可选的 Java 表达式语言，如 OGNL, MVEL,JBoss EL 等等，但 Spel 创建的初衷是了给 Spring 社区提供一">
-<meta name="keywords" content="Spring">
+<meta name="description" content="一、模式动机建立一种对象与对象之间的依赖关系，一个对象发生改变时将自动通知其他对象，其他对象将相应做出反应。在此，发生改变的对象称为观察目标，而被通知的对象称为观察者，一个观察目标可以对应多个观察者，而且这些观察者之间没有相互联系，可以根据需要增加和删除观察者，使得系统更易于扩展，这就是观察者模式的模式动机。">
+<meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring表达式语言">
-<meta property="og:url" content="http://yoursite.com/2018/01/07/Spring表达式语言/index.html">
+<meta property="og:title" content="观察者模式">
+<meta property="og:url" content="http://yoursite.com/2018/09/06/观察者模式/index.html">
 <meta property="og:site_name" content="曾经的自己">
-<meta property="og:description" content="Spring表达式语言:SpEL(一段简单的spel入门代码)简介Spring表达式语言（简称SpEl）是一个支持查询和操作运行时对象导航图功能的强大的表达式语言. 它的语法类似于传统EL，但提供额外的功能，最出色的就是函数调用和简单字符串的模板函数。 尽管有其他可选的 Java 表达式语言，如 OGNL, MVEL,JBoss EL 等等，但 Spel 创建的初衷是了给 Spring 社区提供一">
+<meta property="og:description" content="一、模式动机建立一种对象与对象之间的依赖关系，一个对象发生改变时将自动通知其他对象，其他对象将相应做出反应。在此，发生改变的对象称为观察目标，而被通知的对象称为观察者，一个观察目标可以对应多个观察者，而且这些观察者之间没有相互联系，可以根据需要增加和删除观察者，使得系统更易于扩展，这就是观察者模式的模式动机。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-04T03:22:15.621Z">
+<meta property="og:image" content="http://yoursite.com/2018/09/06/观察者模式/观察者模式.png">
+<meta property="og:updated_time" content="2018-09-06T03:15:07.204Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spring表达式语言">
-<meta name="twitter:description" content="Spring表达式语言:SpEL(一段简单的spel入门代码)简介Spring表达式语言（简称SpEl）是一个支持查询和操作运行时对象导航图功能的强大的表达式语言. 它的语法类似于传统EL，但提供额外的功能，最出色的就是函数调用和简单字符串的模板函数。 尽管有其他可选的 Java 表达式语言，如 OGNL, MVEL,JBoss EL 等等，但 Spel 创建的初衷是了给 Spring 社区提供一">
+<meta name="twitter:title" content="观察者模式">
+<meta name="twitter:description" content="一、模式动机建立一种对象与对象之间的依赖关系，一个对象发生改变时将自动通知其他对象，其他对象将相应做出反应。在此，发生改变的对象称为观察目标，而被通知的对象称为观察者，一个观察目标可以对应多个观察者，而且这些观察者之间没有相互联系，可以根据需要增加和删除观察者，使得系统更易于扩展，这就是观察者模式的模式动机。">
+<meta name="twitter:image" content="http://yoursite.com/2018/09/06/观察者模式/观察者模式.png">
 
 
 
@@ -122,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/07/Spring表达式语言/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/06/观察者模式/"/>
 
 
 
 
 
-  <title>Spring表达式语言 | 曾经的自己</title>
+  <title>观察者模式 | 曾经的自己</title>
   
 
 
@@ -289,7 +291,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/07/Spring表达式语言/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/06/观察者模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="农纷期第一李白">
@@ -306,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Spring表达式语言</h1>
+          <h1 class="post-title" itemprop="name headline">观察者模式</h1>
         
 
         <div class="post-meta">
@@ -318,8 +320,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-07T20:08:48+08:00">
-                2018-01-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-06T11:08:49+08:00">
+                2018-09-06
               </time>
             
 
@@ -341,8 +343,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
                   </a>
                 </span>
 
@@ -383,34 +385,23 @@
       
 
       
-        <h1 id="Spring表达式语言-SpEL-一段简单的spel入门代码"><a href="#Spring表达式语言-SpEL-一段简单的spel入门代码" class="headerlink" title="Spring表达式语言:SpEL(一段简单的spel入门代码)"></a>Spring表达式语言:SpEL(一段简单的spel入门代码)</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Spring表达式语言（简称SpEl）是一个支持查询和操作运行时对象导航图功能的强大的表达式语言. 它的语法类似于传统EL，但提供额外的功能，最出色的就是函数调用和简单字符串的模板函数。</p>
-<p>尽管有其他可选的 Java 表达式语言，如 OGNL, MVEL,JBoss EL 等等，但 Spel 创建的初衷是了给 Spring 社区提供一种简单而高效的表达式语言，一种可贯穿整个 Spring 产品组的语言。这种语言的特性应基于 Spring 产品的需求而设计。</p>
+        <h2 id="一、模式动机"><a href="#一、模式动机" class="headerlink" title="一、模式动机"></a>一、模式动机</h2><p>建立一种对象与对象之间的依赖关系，一个对象发生改变时将自动通知其他对象，其他对象将相应做出反应。在此，发生改变的对象称为观察目标，而被通知的对象称为观察者，一个观察目标可以对应多个观察者，而且这些观察者之间没有相互联系，可以根据需要增加和删除观察者，使得系统更易于扩展，这就是观察者模式的模式动机。</p>
 <a id="more"></a>
-<h2 id="功能简述"><a href="#功能简述" class="headerlink" title="功能简述"></a>功能简述</h2><p>表达式语言支持以下功能：</p>
+<h2 id="二、模式定义"><a href="#二、模式定义" class="headerlink" title="二、模式定义"></a>二、模式定义</h2><p>观察者模式(Observer Pattern)：定义对象间的一种一对多依赖关系，使得每当一个对象状态发生改变时，其相关依赖对象皆得到通知并被自动更新。观察者模式又叫做发布-订阅（Publish/Subscribe）模式、模型-视图（Model/View）模式、源-监听器（Source/Listener）模式或从属者（Dependents）模式。</p>
+<h2 id="三、模式角色"><a href="#三、模式角色" class="headerlink" title="三、模式角色"></a>三、模式角色</h2><p>观察者模式包含如下角色：</p>
 <ul>
-<li>文字表达式</li>
-<li>布尔和关系运算符</li>
-<li>正则表达式</li>
-<li>类表达式</li>
-<li>访问 properties, arrays, lists, maps</li>
-<li>方法调用</li>
-<li>关系运算符</li>
-<li>参数</li>
-<li>调用构造函数</li>
-<li>Bean引用</li>
-<li>构造Array</li>
-<li>内嵌lists</li>
-<li>内嵌maps</li>
-<li>三元运算符</li>
-<li>变量</li>
-<li>用户定义的函数</li>
-<li>集合投影</li>
-<li>集合筛选</li>
-<li>模板表达式</li>
+<li>Subject: 目标</li>
+<li>ConcreteSubject: 具体目标</li>
+<li>Observer: 观察者</li>
+<li>ConcreteObserver: 具体观察者</li>
 </ul>
-<h2 id="代码样例"><a href="#代码样例" class="headerlink" title="代码样例"></a>代码样例</h2><figure class="highlight java"><figcaption><span>代码</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.panjianguo.service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.expression.EvaluationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.expression.Expression;</span><br><span class="line"><span class="keyword">import</span> org.springframework.expression.ExpressionParser;</span><br><span class="line"><span class="keyword">import</span> org.springframework.expression.spel.standard.SpelExpressionParser;</span><br><span class="line"><span class="keyword">import</span> org.springframework.expression.spel.support.StandardEvaluationContext;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 一句话功能简述</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpelTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> NoSuchMethodException </span>&#123;</span><br><span class="line">        <span class="comment">//创建解析器</span></span><br><span class="line">        ExpressionParser parser = <span class="keyword">new</span> SpelExpressionParser();</span><br><span class="line">        <span class="comment">//解析表达式</span></span><br><span class="line">        Expression expression =</span><br><span class="line">                parser.parseExpression(<span class="string">"#decorate('Hello '+#person.name+#end)"</span>);</span><br><span class="line">        <span class="comment">//构造上下文</span></span><br><span class="line">        EvaluationContext context = <span class="keyword">new</span> StandardEvaluationContext();</span><br><span class="line">        <span class="comment">//为end参数值来赋值</span></span><br><span class="line">        context.setVariable(<span class="string">"end"</span>, <span class="string">"!"</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 为对象赋值</span></span><br><span class="line">        Person person = <span class="keyword">new</span> Person(<span class="string">"小明"</span>, <span class="string">"男"</span>, <span class="number">18</span>);</span><br><span class="line">        context.setVariable(<span class="string">"person"</span>, person);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 为方法赋值</span></span><br><span class="line">        Method decorate = SpelTest.class.getDeclaredMethod(<span class="string">"decorate"</span>, String.class);</span><br><span class="line">        context.setVariable(<span class="string">"decorate"</span>, decorate);</span><br><span class="line">        <span class="comment">//打印expression表达式的值</span></span><br><span class="line">        System.out.println(expression.getValue(context));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 人员</span></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">        <span class="keyword">private</span> String name;</span><br><span class="line">        <span class="keyword">private</span> String gender;</span><br><span class="line">        <span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line">        Person(String name, String gender, Integer age) &#123;</span><br><span class="line">            <span class="keyword">this</span>.name = name;</span><br><span class="line">            <span class="keyword">this</span>.gender = gender;</span><br><span class="line">            <span class="keyword">this</span>.age = age;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> name;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 修饰方法</span></span><br><span class="line">    <span class="function"><span class="keyword">static</span> String <span class="title">decorate</span><span class="params">(String content)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"***"</span>+content+<span class="string">"***"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="执行输出值"><a href="#执行输出值" class="headerlink" title="执行输出值"></a>执行输出值</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java ...</span><br><span class="line">***Hello 小明!***</span><br><span class="line"></span><br><span class="line">Process finished with exit code 0</span><br></pre></td></tr></table></figure>
-<h2 id="主要步骤"><a href="#主要步骤" class="headerlink" title="主要步骤"></a>主要步骤</h2><p>1) 创建解析器<br>2) 给解析器设置解析表达式<br>3) 创建构造上下文<br>4) 为构造上下文设置转化参数<br>5) 解析器通过构造上下文将解析表达式转化成想要的内容（在SpEL表达式中，默认情况下，表达式前缀为 ‘ # ‘ ，而后缀为 ‘ } ‘ 。如果表达式中没有前缀和后缀，那么表达式字符串就被当作纯文本。）</p>
+<h2 id="四、模式实例图"><a href="#四、模式实例图" class="headerlink" title="四、模式实例图"></a>四、模式实例图</h2><p><img src="/2018/09/06/观察者模式/观察者模式.png" alt="image"></p>
+<h2 id="五、实例代码"><a href="#五、实例代码" class="headerlink" title="五、实例代码"></a>五、实例代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> *  主题</span><br><span class="line"> */</span><br><span class="line">public interface Subject &#123;</span><br><span class="line">    // 观察者注册</span><br><span class="line">    public void registerObserver(Observer o);</span><br><span class="line">    // 删除观察者</span><br><span class="line">    public void removeObserver(Observer o);</span><br><span class="line">    // 当主题有内容更新时调用，用于通知观察者</span><br><span class="line">    public void notifyObserver();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *  观察者</span><br><span class="line"> */</span><br><span class="line">public interface Observer &#123;</span><br><span class="line">    // 当气象站观测的天气发生变化时，主题会把参数值传给观察者</span><br><span class="line">    public void update(float temp);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *  用于布告板显示</span><br><span class="line"> */</span><br><span class="line">public interface DisplayElement &#123;</span><br><span class="line">    // 在显示布告板上显示的操作</span><br><span class="line">    public void display();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 气象站实现主题，发布气象信息（气温）</span><br><span class="line"> */</span><br><span class="line">public class WeatherStation implements Subject&#123;</span><br><span class="line">    private ArrayList observers;</span><br><span class="line">    private float temp;</span><br><span class="line"></span><br><span class="line">    public WeatherStation() &#123;</span><br><span class="line">        // 加个ArrayList存放所有注册的Observer对象;</span><br><span class="line">        observers = new ArrayList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void registerObserver(Observer o) &#123;</span><br><span class="line">        // 当新的观察者注册时添加进来</span><br><span class="line">        observers.add(o);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void removeObserver(Observer o) &#123;</span><br><span class="line">        // 当观察者取消注册时去除该观察者</span><br><span class="line">        int i = observers.indexOf(o);</span><br><span class="line">        if (i&gt;=0) &#123;</span><br><span class="line">            observers.remove(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void notifyObserver() &#123;</span><br><span class="line">        // 更新状态，调用Observer的update告诉观察者有新的信息</span><br><span class="line">        for (int i = 0; i &lt; observers.size(); i++) &#123;</span><br><span class="line">            Observer observer = (Observer) observers.get(i);</span><br><span class="line">            observer.update(temp);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     *  此方法用于气象站收到的数据,并且调用更新使数据实时通知给观察者</span><br><span class="line">     */</span><br><span class="line">    public void setMeasurements(float temp)&#123;</span><br><span class="line">        this.temp = temp;</span><br><span class="line">        System.out.println(&quot;气象站测量的温度为：&quot; + temp + &quot;℃&quot;);</span><br><span class="line">        notifyObserver();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 布告板上的状态显示</span><br><span class="line"> */</span><br><span class="line">public class ConditionDisplay implements Observer,DisplayElement&#123;</span><br><span class="line">    private float temp;</span><br><span class="line">    private Subject weatherStation;</span><br><span class="line"></span><br><span class="line">    public ConditionDisplay(Subject weatherStation) &#123;</span><br><span class="line">        // 构造时需要间主题/被观察者对象作为注册之用</span><br><span class="line">        this.weatherStation = weatherStation;</span><br><span class="line">        weatherStation.registerObserver(this);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void display() &#123;</span><br><span class="line">        // 将数据显示在布告板上</span><br><span class="line">        System.out.println(&quot;布告板显示当前温度为：&quot; + temp + &quot;℃&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void update(float temp) &#123;</span><br><span class="line">        // 接受来自主题/被观察者（气象站）的数据</span><br><span class="line">        this.temp = temp;</span><br><span class="line">        display();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 天气观测站</span><br><span class="line"> */</span><br><span class="line">public class WeatherObserver &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // 首先创建一个主题/被观察者</span><br><span class="line">        WeatherStation weatherStation = new WeatherStation();</span><br><span class="line">        // 创建观察者并将被观察者对象传入</span><br><span class="line">        ConditionDisplay conditionDisplay = new ConditionDisplay(weatherStation);</span><br><span class="line"></span><br><span class="line">        // 设置气象站模拟收到的气温数据</span><br><span class="line">        weatherStation.setMeasurements(25);</span><br><span class="line">        weatherStation.setMeasurements(24);</span><br><span class="line">        weatherStation.setMeasurements(23);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>JAVA内置观察者模式<br>可以使用java内置的观察者模式，这样就无需自己写Subject和Observer类了，在java.util包下继承的Observable和实现Observer类即可。其修改后的代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 继承java内置的被观察者，因此不再需要注册和删除了</span><br><span class="line"> */</span><br><span class="line">public class WeatherStationN extends Observable&#123;</span><br><span class="line">    private float temperature;</span><br><span class="line">    public WeatherStationN() &#123;</span><br><span class="line">        // 由于继承了Observable，它已经创建了一个Vector来存放Observer对象的容器，所以此处不用再建立ArrayList</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     *  此方法用于气象站收到的数据,并且调用更新使数据实时通知给观察者</span><br><span class="line">     */</span><br><span class="line">    public void setMeasurements(float temp)&#123;</span><br><span class="line">        this.temperature = temp;</span><br><span class="line">        System.out.println(&quot;气象站测量的温度为：&quot; + temp + &quot;℃&quot;);</span><br><span class="line">        // 更新强调用表示有状态更新</span><br><span class="line">        setChanged();</span><br><span class="line">        notifyObservers(temperature);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 实现java内置Observer接口</span><br><span class="line"> */</span><br><span class="line">public class ConditionDisplayN implements java.util.Observer,DisplayElement&#123;</span><br><span class="line">    private Observable observable;</span><br><span class="line">    private float temp;</span><br><span class="line"></span><br><span class="line">    public ConditionDisplayN(Observable observable) &#123;</span><br><span class="line">        // 构造器需要Observable作为参数</span><br><span class="line">        this.observable = observable;</span><br><span class="line">        observable.addObserver(this);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void display() &#123;</span><br><span class="line">        // 将数据显示在布告板上</span><br><span class="line">        System.out.println(&quot;布告板显示当前温度为：&quot; + temp + &quot;℃&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void update(Observable o, Object arg) &#123;</span><br><span class="line">        // 当被观察者有更新使触发</span><br><span class="line">        if (o instanceof WeatherStationN) &#123;</span><br><span class="line">            this.temp = (float) arg;</span><br><span class="line">            display();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 天气观测站</span><br><span class="line"> */</span><br><span class="line">public class WeatherObserver &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // 首先创建一个主题/被观察者</span><br><span class="line">        WeatherStationN weatherStationN = new WeatherStationN();</span><br><span class="line">        // 创建观察者并将被观察者对象传入</span><br><span class="line">        ConditionDisplayN conditionDisplayN = new ConditionDisplayN(weatherStationN);</span><br><span class="line"></span><br><span class="line">        // 设置气象站模拟收到的气温数据</span><br><span class="line">        weatherStationN.setMeasurements(30);</span><br><span class="line">        weatherStationN.setMeasurements(25);</span><br><span class="line">        weatherStationN.setMeasurements(20);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="六、自我理解"><a href="#六、自我理解" class="headerlink" title="六、自我理解"></a>六、自我理解</h2><p>观察者模式的作用是通过一对多的关系依赖，当一个对象状态发生改变时，通过松耦合的方式改变一系列对象的状态。</p>
+<p>原理实现的话就是在被观察者对象里创建一个观察者列表，然后再把观察者注入被观察者的观察者列表中.当被观察者中的状态改变时，调用通知方法，然后逐个调用各个观察者的update方法，改变观察者的状态。</p>
+<p>观察者模式很容易和监听事件模式搞混，观察者模式的通知不包含事件源，但是事件模式是发送一个事件通知各个事件监听器，是包含事件源的。</p>
+<h2 id="七、参考文献"><a href="#七、参考文献" class="headerlink" title="七、参考文献"></a>七、参考文献</h2><p><a href="https://blog.csdn.net/qq_15128547/article/details/53205892" target="_blank" rel="noopener">观察者模式的简单例子</a></p>
 
       
     </div>
@@ -428,7 +419,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Spring/" rel="tag"># Spring</a>
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
           
         </div>
       
@@ -441,15 +432,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/09/05/动态代理/" rel="next" title="动态代理">
+                <i class="fa fa-chevron-left"></i> 动态代理
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/16/java事物隔离级别/" rel="prev" title="java事物隔离级别">
-                java事物隔离级别 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -592,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring表达式语言-SpEL-一段简单的spel入门代码"><span class="nav-number">1.</span> <span class="nav-text">Spring表达式语言:SpEL(一段简单的spel入门代码)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#功能简述"><span class="nav-number">1.2.</span> <span class="nav-text">功能简述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码样例"><span class="nav-number">1.3.</span> <span class="nav-text">代码样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#执行输出值"><span class="nav-number">1.4.</span> <span class="nav-text">执行输出值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主要步骤"><span class="nav-number">1.5.</span> <span class="nav-text">主要步骤</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、模式动机"><span class="nav-number">1.</span> <span class="nav-text">一、模式动机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、模式定义"><span class="nav-number">2.</span> <span class="nav-text">二、模式定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、模式角色"><span class="nav-number">3.</span> <span class="nav-text">三、模式角色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、模式实例图"><span class="nav-number">4.</span> <span class="nav-text">四、模式实例图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、实例代码"><span class="nav-number">5.</span> <span class="nav-text">五、实例代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、自我理解"><span class="nav-number">6.</span> <span class="nav-text">六、自我理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、参考文献"><span class="nav-number">7.</span> <span class="nav-text">七、参考文献</span></a></li></ol></div>
             
 
           </div>

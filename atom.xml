@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-05T09:29:21.916Z</updated>
+  <updated>2018-09-06T03:15:07.204Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>观察者模式</title>
+    <link href="http://yoursite.com/2018/09/06/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2018/09/06/观察者模式/</id>
+    <published>2018-09-06T03:08:49.000Z</published>
+    <updated>2018-09-06T03:15:07.204Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、模式动机&quot;&gt;&lt;a href=&quot;#一、模式动机&quot; class=&quot;headerlink&quot; title=&quot;一、模式动机&quot;&gt;&lt;/a&gt;一、模式动机&lt;/h2&gt;&lt;p&gt;建立一种对象与对象之间的依赖关系，一个对象发生改变时将自动通知其他对象，其他对象将相应做出反应。在此，发生改变的对象称为观察目标，而被通知的对象称为观察者，一个观察目标可以对应多个观察者，而且这些观察者之间没有相互联系，可以根据需要增加和删除观察者，使得系统更易于扩展，这就是观察者模式的模式动机。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="设计模式" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>动态代理</title>
