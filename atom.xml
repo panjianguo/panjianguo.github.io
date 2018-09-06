@@ -120,7 +120,7 @@
     <link href="http://yoursite.com/2018/02/05/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
     <id>http://yoursite.com/2018/02/05/迭代器模式/</id>
     <published>2018-02-05T12:25:44.000Z</published>
-    <updated>2018-09-03T08:51:40.109Z</updated>
+    <updated>2018-09-06T05:35:26.515Z</updated>
     
     <summary type="html">
     
@@ -134,8 +134,10 @@
     
     </summary>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="设计模式" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
