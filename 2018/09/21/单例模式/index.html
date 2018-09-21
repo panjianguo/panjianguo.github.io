@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -81,13 +81,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="曾经的自己">
-<meta property="og:url" content="http://yoursite.com/tags/转载/index.html">
+<meta name="description" content="一、什么是单例一个类在整个系统中只有一个实例，而且这个实例在类的内部由private构造的，外部不能直接调用其构造方法，只能获取它的单例。">
+<meta name="keywords" content="设计模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="单例模式">
+<meta property="og:url" content="http://yoursite.com/2018/09/21/单例模式/index.html">
 <meta property="og:site_name" content="曾经的自己">
+<meta property="og:description" content="一、什么是单例一个类在整个系统中只有一个实例，而且这个实例在类的内部由private构造的，外部不能直接调用其构造方法，只能获取它的单例。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-21T09:35:43.730Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="曾经的自己">
+<meta name="twitter:title" content="单例模式">
+<meta name="twitter:description" content="一、什么是单例一个类在整个系统中只有一个实例，而且这个实例在类的内部由private构造的，外部不能直接调用其构造方法，只能获取它的单例。">
 
 
 
@@ -117,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/转载/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/21/单例模式/"/>
 
 
 
 
 
-  <title>标签: 转载 | 曾经的自己</title>
+  <title>单例模式 | 曾经的自己</title>
   
 
 
@@ -142,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,54 +275,181 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>转载<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/21/单例模式/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="农纷期第一李白">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曾经的自己">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/06/翻墙/" itemprop="url">
-              
-                <span itemprop="name">转载：学习一下德国人民的翻墙精神</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">单例模式</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-06T13:58:24+08:00"
-              content="2018-09-06" >
-          09-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-21T17:34:35+08:00">
+                2018-09-21
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+          
+          
+            <span class="post-meta-divider">|</span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>一、什么是单例<br>一个类在整个系统中只有一个实例，而且这个实例在类的内部由private构造的，外部不能直接调用其构造方法，只能获取它的单例。</p>
+<a id="more"></a>
+<p>二、单例模式的优点<br>在内存中只有一个实例对象，节省内存空间，避免重复的创建和销毁对象，可以提高性能，避免对多重资源的重复占用，可以全局进行访问。</p>
+<p>三、实现单例模式的方式<br>1.饿汉单例模式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 饿汉式单例</span><br><span class="line">public class Singleton &#123;</span><br><span class="line">    // 私有构造</span><br><span class="line">    private Singleton() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    private static Singleton single = new Singleton();</span><br><span class="line"></span><br><span class="line">    // 静态工厂方法</span><br><span class="line">    public static Singleton getInstance() &#123;</span><br><span class="line">        return single;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>饿汉式单例在类加载初始化时就创建好一个静态的对象供外部使用，除非系统重启，这个对象不会改变，所以本身就是线程安全的。</p>
+<p>2.懒汉模式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton &#123;</span><br><span class="line">    // 私有构造</span><br><span class="line">    private Singleton1() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    private static Singleton single = null;</span><br><span class="line"></span><br><span class="line">    // 静态工厂方法</span><br><span class="line">    public static Singleton getInstance() &#123;</span><br><span class="line">        if(single == null)&#123;</span><br><span class="line">            single = new Singleton();</span><br><span class="line">        &#125;</span><br><span class="line">        return single;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>懒汉模式一开始不创建单例对象，只有在调用getInstance()方法时才会创建单例对象</p>
+<p>3.双重锁模式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton&#123;</span><br><span class="line">    private static volatile Singleton instance=null;</span><br><span class="line">    private Singleton()&#123;</span><br><span class="line">        //do something</span><br><span class="line">    &#125;</span><br><span class="line">    public static  Singleton getInstance()&#123;</span><br><span class="line">        if(instance==null)&#123;</span><br><span class="line">            synchronized(Singleton.class)&#123;</span><br><span class="line">                if(instance==null)&#123;</span><br><span class="line">                    instance=new Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return instance;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br><span class="line">//这个模式将同步内容下放到if内部，提高了执行的效率，不必每次获取对象时都进行同步，只有第一次才同步，创建了以后就没必要了。</span><br><span class="line">//这种模式中双重判断加同步的方式，比第一个例子中的效率大大提升，因为如果单层if判断，在服务器允许的情况下，</span><br><span class="line">//假设有一百个线程，耗费的时间为100*（同步判断时间+if判断时间），而如果双重if判断，100的线程可以同时if判断，理论消耗的时间只有一个if判断的时间。</span><br><span class="line">//所以如果面对高并发的情况，而且采用的是懒汉模式，最好的选择就是双重判断加同步的方式。</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/16/工厂模式/" rel="next" title="工厂模式">
+                <i class="fa fa-chevron-left"></i> 工厂模式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -325,6 +457,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -567,6 +703,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

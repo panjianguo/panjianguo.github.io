@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-16T12:28:17.147Z</updated>
+  <updated>2018-09-21T09:35:43.730Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单例模式</title>
+    <link href="http://yoursite.com/2018/09/21/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2018/09/21/单例模式/</id>
+    <published>2018-09-21T09:34:35.000Z</published>
+    <updated>2018-09-21T09:35:43.730Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一、什么是单例&lt;br&gt;一个类在整个系统中只有一个实例，而且这个实例在类的内部由private构造的，外部不能直接调用其构造方法，只能获取它的单例。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="设计模式" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>工厂模式</title>
