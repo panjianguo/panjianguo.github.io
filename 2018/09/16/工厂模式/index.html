@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -81,13 +81,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="曾经的自己">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta name="description" content="一、工厂模式简介工厂模式（Factory Pattern）是 Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。 工厂模式是指对象的创建不是外部对象直接调用对象的构造函数创建对象，而是调用该对象对应的工厂类对象去创建对应的类对象。">
+<meta name="keywords" content="设计模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工厂模式">
+<meta property="og:url" content="http://yoursite.com/2018/09/16/工厂模式/index.html">
 <meta property="og:site_name" content="曾经的自己">
+<meta property="og:description" content="一、工厂模式简介工厂模式（Factory Pattern）是 Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。 工厂模式是指对象的创建不是外部对象直接调用对象的构造函数创建对象，而是调用该对象对应的工厂类对象去创建对应的类对象。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-16T12:28:17.147Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="曾经的自己">
+<meta name="twitter:title" content="工厂模式">
+<meta name="twitter:description" content="一、工厂模式简介工厂模式（Factory Pattern）是 Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。 工厂模式是指对象的创建不是外部对象直接调用对象的构造函数创建对象，而是调用该对象对应的工厂类对象去创建对应的类对象。">
 
 
 
@@ -117,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/2/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/16/工厂模式/"/>
 
 
 
 
 
-  <title>曾经的自己</title>
+  <title>工厂模式 | 曾经的自己</title>
   
 
 
@@ -142,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,9 +274,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -285,7 +289,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/16/java事物隔离级别/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/16/工厂模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="农纷期第一李白">
@@ -302,9 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/16/java事物隔离级别/" itemprop="url">java事物隔离级别</a></h1>
+          <h1 class="post-title" itemprop="name headline">工厂模式</h1>
         
 
         <div class="post-meta">
@@ -316,8 +318,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T21:29:54+08:00">
-                2018-01-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-16T20:26:39+08:00">
+                2018-09-16
               </time>
             
 
@@ -339,8 +341,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
                   </a>
                 </span>
 
@@ -360,6 +362,9 @@
           
           
           
+            <span class="post-meta-divider">|</span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
 
           
 
@@ -378,26 +383,23 @@
       
 
       
-        
-          
-            <h2 id="形成原因："><a href="#形成原因：" class="headerlink" title="形成原因："></a>形成原因：</h2><blockquote>
-<p>java多线程并发导致读取数据时出现了一些问题：</p>
+        <h2 id="一、工厂模式简介"><a href="#一、工厂模式简介" class="headerlink" title="一、工厂模式简介"></a>一、工厂模式简介</h2><p>工厂模式（Factory Pattern）是 Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。</p>
+<p>工厂模式是指对象的创建不是外部对象直接调用对象的构造函数创建对象，而是调用该对象对应的工厂类对象去创建对应的类对象。</p>
+<a id="more"></a>
+<p>工厂模式共分为三种模式</p>
 <ul>
-<li>脏读:一个事务读取了另一个未提交的并行事务写的数据</li>
-<li>不可重复读:一个事务重新读取前面读取过的数据， 发现该数据已经被另一个已提交的事务修改过</li>
-<li>幻读:一个事务重新执行一个查询，返回一套符合查询条件的行， 发现这些行因为其他最近提交的事务而发生了改变</li>
+<li>简单工厂模式</li>
+<li>工厂模式</li>
+<li>抽象工厂模式</li>
 </ul>
-</blockquote>
-<h2 id="事物隔离级别"><a href="#事物隔离级别" class="headerlink" title="事物隔离级别"></a>事物隔离级别</h2><ul>
-<li>读未提交（Read uncommitted）</li>
-<li>读已提交（Readcommitted）</li>
-<li>可重复读（Repeatableread）</li>
-<li>可串行化（Serializable）</li>
-</ul>
-<h2 id="隔离级别与问题对应关系"><a href="#隔离级别与问题对应关系" class="headerlink" title="隔离级别与问题对应关系"></a>隔离级别与问题对应关系</h2><p><img src="/2018/01/16/java事物隔离级别/java事物隔离级别.png" alt=""></p>
+<h2 id="二、简单工厂模式"><a href="#二、简单工厂模式" class="headerlink" title="二、简单工厂模式"></a>二、简单工厂模式</h2><p>创建一个工厂，定义一个create方法，通过传入的参数不同生成不同类型的对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">public abstract class Good &#123;</span><br><span class="line">    /**</span><br><span class="line">     * </span><br><span class="line">     */</span><br><span class="line">    public abstract void desc();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Good1 extends Good &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void desc() &#123;</span><br><span class="line">        sout(&quot;我是商品1&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Good2 extends Good &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void desc() &#123;</span><br><span class="line">        sout(&quot;我是商品2&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Good3 extends Good &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void desc() &#123;</span><br><span class="line">        sout(&quot;我是商品3&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class GoodFactory &#123;</span><br><span class="line">    Good good;</span><br><span class="line">    public void create(int type) &#123;</span><br><span class="line">        if (type == 1) &#123;</span><br><span class="line">            good =new Good1;</span><br><span class="line">        &#125; else if (type == 2) &#123;</span><br><span class="line">            good = new Good2;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            good = new Good3;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简单工厂模式当需要增加一种子类型时，除了要增加一种子类型，还需要修改工厂方法，扩展性差</p>
+<h2 id="三、工厂模式"><a href="#三、工厂模式" class="headerlink" title="三、工厂模式"></a>三、工厂模式</h2><p>其实很简单，就是一个类型对应的生成一个对应的工厂类，通过各自的工厂类创建对应的类型对象。</p>
+<p>工厂方法模式仿佛已经很完美的对对象的创建进行了包装，使得客户程序中仅仅处理抽象产品角色提供的接口，但使得对象的数量成倍增长。当产品种类非常多时，会出现大量的与之对应的工厂对象，这不是我们所希望的。</p>
+<h2 id="四、抽象工厂模式"><a href="#四、抽象工厂模式" class="headerlink" title="四、抽象工厂模式"></a>四、抽象工厂模式</h2><p>抽象工厂模式中的产品族实际上就是通过一个抽象工厂类，根据不同的产品族创建不同的实例工厂，然后由实例工厂创建对应的实例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">abstract class Car&#123;  </span><br><span class="line">    private String name;  </span><br><span class="line">      </span><br><span class="line">    public abstract void drive();  </span><br><span class="line">      </span><br><span class="line">    public String getName() &#123;  </span><br><span class="line">        return name;  </span><br><span class="line">    &#125;  </span><br><span class="line">    public void setName(String name) &#123;  </span><br><span class="line">        this.name = name;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">//具体产品  </span><br><span class="line">class Benz extends Car&#123;  </span><br><span class="line">    public void drive()&#123;  </span><br><span class="line">        System.out.println(this.getName()+&quot;----go-----------------------&quot;);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">class Bmw extends Car&#123;  </span><br><span class="line">    public void drive()&#123;  </span><br><span class="line">        System.out.println(this.getName()+&quot;----go-----------------------&quot;);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">//抽象工厂  </span><br><span class="line">abstract class Driver&#123;  </span><br><span class="line">    public abstract Car createCar(String car) throws Exception;  </span><br><span class="line">&#125;  </span><br><span class="line">//具体工厂（每个具体工厂负责一个具体产品）  </span><br><span class="line">class BenzDriver extends Driver&#123;  </span><br><span class="line">    public Car createCar(String car) throws Exception &#123;  </span><br><span class="line">        return new Benz();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">class BmwDriver extends Driver&#123;  </span><br><span class="line">    public Car createCar(String car) throws Exception &#123;  </span><br><span class="line">        return new Bmw();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">//老板  </span><br><span class="line">public class Boss&#123;  </span><br><span class="line">  </span><br><span class="line">    public static void main(String[] args) throws Exception &#123;  </span><br><span class="line">        Driver d = new BenzDriver();  </span><br><span class="line">        Car c = d.createCar(&quot;benz&quot;);   </span><br><span class="line">        c.setName(&quot;benz&quot;);  </span><br><span class="line">        c.drive();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -412,163 +414,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/07/Spring表达式语言/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="农纷期第一李白">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="曾经的自己">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/07/Spring表达式语言/" itemprop="url">Spring表达式语言</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-07T20:08:48+08:00">
-                2018-01-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-          
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <h1 id="Spring表达式语言-SpEL-一段简单的spel入门代码"><a href="#Spring表达式语言-SpEL-一段简单的spel入门代码" class="headerlink" title="Spring表达式语言:SpEL(一段简单的spel入门代码)"></a>Spring表达式语言:SpEL(一段简单的spel入门代码)</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Spring表达式语言（简称SpEl）是一个支持查询和操作运行时对象导航图功能的强大的表达式语言. 它的语法类似于传统EL，但提供额外的功能，最出色的就是函数调用和简单字符串的模板函数。</p>
-<p>尽管有其他可选的 Java 表达式语言，如 OGNL, MVEL,JBoss EL 等等，但 Spel 创建的初衷是了给 Spring 社区提供一种简单而高效的表达式语言，一种可贯穿整个 Spring 产品组的语言。这种语言的特性应基于 Spring 产品的需求而设计。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/07/Spring表达式语言/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/07/建造者-builder-模式/" rel="next" title="建造者(builder)模式">
+                <i class="fa fa-chevron-left"></i> 建造者(builder)模式
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -578,14 +453,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -593,6 +465,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -613,8 +489,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -685,6 +570,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、工厂模式简介"><span class="nav-number">1.</span> <span class="nav-text">一、工厂模式简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、简单工厂模式"><span class="nav-number">2.</span> <span class="nav-text">二、简单工厂模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、工厂模式"><span class="nav-number">3.</span> <span class="nav-text">三、工厂模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、抽象工厂模式"><span class="nav-number">4.</span> <span class="nav-text">四、抽象工厂模式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -835,6 +736,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
